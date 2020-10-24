@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:wght@700&family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topo {
+    background-color: #f9003d;
+    width: 100%;
+    height: 60px;
+    /* position: fixed;
+    top: 0; */
+}
+.menu {
+    width: 1200px;
+    height: 60px;
+    /* background-color: #ccc; */
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul {
+    margin-left: auto;
+    width: 600px;
+    height: 60px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'bebas Neue', cursive;
+    font-size: 18px;
+    padding: 17px 50px;
+}
+.menu a:hover {
+    background-color: #A259F7;
+    text-decoration: underline;
+}
+.banner {
+    width: 100%;
+    height: 740px;
+    background-image: url("../imgs/imagem-fundo-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.content {
+    width: 1200px;
+    height: 100%;
+    /* background-color: rgba(161, 175, 174, 0.301); */
+    margin: auto;
+    }
+.alinhando-abaixo {
+    display: flex;
+    align-items: flex-end;
+}
+.banner-text {
+    width: 560px;
+    height: 550px;
+    /* background-color: rgba(255, 255, 0, 0.425); */
+} 
+.banner-text h1 {
+    text-transform: uppercase;
+    font-size: 96px;
+    font-family: 'bebas Neue', cursive;
+    color: #fff;
+    border-bottom: solid 2px #FFAF00;
+    padding-bottom: 25px;
+}
+.banner-text p {
+    font-family: 'Courier Prime', monospace;
+    font-size: 52px;
+    color: #F9003D;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.banner-text span {
+    margin-left: 20px;
+}
+/* Sobre */
+.sobre {
+    width: 100%;
+    height: 800px;
+    background-color: #080324;
+}
+.sobre h2 {
+    color: #F9003D;
+    font-family: 'bebas Neue', cursive;
+    font-size: 64px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.artigo-sobre {
+    display: flex;
+    justify-content: space-between;
+}
+.artigo-sobre img {
+    width: 500px;
+}
+.artigo-text-sobre {
+    width: 600px;
+    color: #fff;
+   }
+.artigo-text-sobre h3:nth-child(1) {
+    font-family: 'Courier Prime', monospace;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.artigo-text-sobre h3:nth-child(2) {
+    color: #FFAF00;
+    font-family: 'bebas Neue', cursive;
+    font-size: 64px;
+}
+.artigo-text-sobre p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+/* Informações */
+.info {
+    width: 100%;
+    height: 200px;
+    background-image: url("../imgs/imagem-fundo-info.jpg");
+    background-size: cover;
+    text-transform: uppercase;
+    font-family: 'Courier Prime', monospace;
+}
+.info h4 {
+    color: #fff;
+    font-size: 24px;
+}
+.info p {
+    width: 250px;
+    color: #A259F7;
+    font-size: 28px;
+    border: solid 1px #A259F7;
+    text-align: center;
+    padding:1em 0;
+}
+.info-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Endereco */
+.endereco {
+    width: 100%;
+    height: 500px;
+    background-image: url("../imgs/imagem-fundo-ranking.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.endereco h2 {
+    font-family: 'bebas Neue', cursive;
+    font-size: 64px;
+    color: #FFAF00;
+}
+.end-text {
+    width: 800px;
+    height: 210px;
+    background-color: #010010;
+    border: solid 2px #340B65;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.end-text p {
+    font-family: 'Courier Prime', monospace;
+    font-size: 24px;
+    color: #A259F7;
+    margin-left: 20px;
+}
+.alinhamento-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-text img {
+    position: absolute;
+    right: 20px;
+    top: -80px;
+}
+.rodape {
+    width: 100%;
+    height: 80px;
+    background-color: #F9003D;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
