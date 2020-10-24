@@ -12,7 +12,8 @@
     top: 0; */
 }
 .menu {
-    width: 1200px;
+    width: 95%;
+    max-width: 1200px;
     height: 60px;
     /* background-color: #ccc; */
     margin: auto;
@@ -50,7 +51,8 @@
     background-size: cover;
 }
 .content {
-    width: 1200px;
+    width: 95%;
+    max-width: 1200px;
     height: 100%;
     /* background-color: rgba(161, 175, 174, 0.301); */
     margin: auto;
@@ -99,9 +101,12 @@
 .artigo-sobre {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .artigo-sobre img {
-    width: 500px;
+    width: 40%;
+    max-width: 500px;
+    min-width: 450px;
 }
 .artigo-text-sobre {
     width: 600px;
@@ -197,3 +202,57 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 1199px){
+    .sobre{
+        height: auto;
+        padding-bottom: 4em;
+    }
+    .sobre .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .artigo-sobre{
+        justify-content: center;
+    }
+    .artigo-sobre img{
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 2em;
+    }
+    .artigo-text-sobre{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 991px){ 
+    .artigo-sobre img{
+        max-width: 700px;
+    }
+        
+    .artigo-text-sobre{
+        width: 90%;
+    }
+    .info-card{
+        text-align: center;
+    }
+    .info p{
+        width: 220px;
+    }
+    .end-text{
+        width: 700px;
+        flex-direction: column;
+        height: auto;    
+        padding: 2em 0; 
+    }
+    .endereco{
+        height: auto;
+        padding-bottom: 2em;
+    }
+    .end-text img{
+        position: unset;
+        margin-top: 2em;
+    }
+
+}    
